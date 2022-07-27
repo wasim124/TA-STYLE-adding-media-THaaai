@@ -1,0 +1,399 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/** custom css **/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: #9b9b9b;
+
+}
+
+a {
+    text-decoration: none;
+    /* color: #ffffff; */
+}
+
+/** Genral **/
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-48 {
+    flex: 0 1 48%;
+}
+
+.flex-40 {
+    flex: 0 1 40%;
+}
+
+.flex-30 {
+    flex: 0 1 30%;
+}
+
+.flex-60 {
+    flex: 0 1 60%;
+}
+
+.flex-23 {
+    flex: 0 1 23%;
+}
+
+.padding {
+    padding: 80px 0;
+}
+
+
+.heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.sec-header {
+    margin-bottom: 24px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-0 {
+    font-size: 0;
+}
+
+/** image **/
+.flexible-img {
+    width: 100%;
+    height: auto;
+}
+
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #e7e1e1;
+    margin-right: 4px;
+    display: inline-block;
+}
+
+/** header **/
+
+.navbar {
+    padding: 32px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar li {
+    margin-left: 32px;
+}
+
+.navbar a {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.navbar .brand {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.social i {
+    color: #ffffff;
+}
+
+.button {
+    margin-left: 32px;
+}
+
+.btn {
+    padding: 16px 26px;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #cf3732;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-secondary {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.btn-ternary {
+    color: black;
+    background-color: #efefef;
+    margin-top: 32px;
+}
+
+/** hero **/
+
+.hero {
+    background: linear-gradient(to right, rgba(69, 136, 212, 0.7), rgba(138, 240, 150, 0.7)),
+        url(../media/home-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding: 180px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-heading {
+    font-size: 44px;
+    font-weight: 700;
+
+}
+
+.hero-subheading {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+}
+
+/** intro **/
+.intro {
+    position: relative;
+}
+
+.progress {
+    padding: 0 44px;
+}
+
+.progress-items h3 {
+    color: black;
+    font-weight: 500;
+}
+
+.progress-items p {
+    color: black;
+    font-weight: 500;
+}
+
+progress {
+    width: 100%;
+    height: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: ;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #ffffff;
+}
+
+progress::-webkit-progress-value {
+    background-color: black;
+}
+
+
+.intro-img {
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+}
+
+
+/*Blog*/
+
+.blog {
+    background-color: #efefef;
+}
+
+.article {
+    background-color: #ffffff;
+    margin: 24px 0;
+}
+
+.article-content {
+    padding: 32px;
+}
+
+.article time {
+    color: red;
+}
+
+.article time i {
+    margin-right: 8px;
+}
+
+.article h3 {
+    font-size: 24px;
+    color: black;
+    font-weight: 500;
+    margin: 12px 0;
+}
+
+/**work**/
+.work img {
+    border-radius: 6px;
+}
+
+/*contact*/
+.contact {
+    background: linear-gradient(to right, #1579e4,#7df065);
+}
+
+.contact .heading {
+    color: #ffffff;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    color: black;
+    padding: 16px 12px;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact .btn {
+    margin-top: 32px;
+}
+
+.map {
+    text-align: center;
+}
+
+.map iframe {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+/*footer*/
+
+.footer {
+    background: linear-gradient(to right, #424242, #010101);
+}
+
+.footer h3{
+font-size: 24px;
+color: #ffffff;
+font-weight: 700;
+margin-bottom: 16px;
+}
+
+.footer p, .footer a,.footer address {
+    color: #ffffff;
+}
+.footer hr{
+    margin-top: 32px;
+    border: 0;
+ border-top: 1px solid #5a5a5a;
+}
+
+.footer-padding{
+    padding: 32px;
+    color: #ffffff;
+}
+.footer-padding p{
+    margin-right: 32px;
+}
+.footer-padding li{
+    margin-left: 32px;
+}
